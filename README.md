@@ -28,4 +28,4 @@ Ruby is supported and displays correctly in Internet Explorer, however, the Word
 
 ## Credits:
 
-WP Furigana uses a modifed version of [Zoltan Hawryluk's ruby css](http://www.useragentman.com/blog/2010/10/29/cross-browser-html5-ruby-annotations-using-css/) which is based on George Chavchanidze's ruby css developed for Prince XML.
+WP Furigana uses a modifed version of [Zoltan Hawryluk's ruby css](http://www.useragentman.com/blog/2010/10/29/cross-browser-html5-ruby-annotations-using-css/) which is based on [George Chavchanidze's](http://www.chavchanidze.com/) ruby css developed for [Prince XML](http://www.princexml.com/bb/viewtopic.php?t=81).
