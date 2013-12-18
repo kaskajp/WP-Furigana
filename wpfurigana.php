@@ -1,11 +1,11 @@
 <?php
 /**
  * Plugin Name: WP Furigana
- * Plugin URI: https://github.com/craftcouch/WP-Furigana
+ * Plugin URI: http://kaska.jp/wp-furigana/
  * Description: Easily add furigana to text in the WordPress editor
- * Author: Craft Couch
- * Version: 0.1
- * Author URI: http://craftcou.ch/
+ * Author: KASKA
+ * Version: 1.1
+ * Author URI: http://kaska.jp/
  */
 
 function furigana_tinymce_config( $init ) {
