@@ -1,10 +1,10 @@
 <?php
 /**
- * Plugin Name: WP Furigana
- * Plugin URI: http://kaska.jp/wp-furigana/
+ * Plugin Name: WP-Furigana
+ * Plugin URI: http://kaska.jp/
  * Description: Easily add furigana to text in the WordPress editor
  * Author: KASKA
- * Version: 1.1
+ * Version: 1.2
  * Author URI: http://kaska.jp/
  */
 
@@ -31,8 +31,10 @@ function furigana_add_tinymce_button() {
 		return;
  
 	// Add only in Rich Editor mode
-	if ( get_user_option('rich_editing') == 'true') {
-		add_filter("mce_external_plugins", "furigana_add_tinymce_plugin");
+	if ( get_user_option( 'rich_editing' ) == 'true' ) {
+		add_filter('mce_external_plugins', 'furigana_add_tinymce_plugin');
+		add_filter('mce_buttons', 'furigana_change_mce_buttons');
+
 	}
 }
 add_action('init', 'furigana_add_tinymce_button');
@@ -49,7 +51,7 @@ function load_furigana_scripts() {
 	$wpfuriganajs = plugins_url('/wpfurigana.js', __FILE__);
 	wp_enqueue_script('wpfurigana-js', $wpfuriganajs, array('jquery'), array('1.7.2'));
 }
-add_action('after_setup_theme', 'load_furigana_scripts');
+add_action('wp_enqueue_script', 'load_furigana_scripts');
 add_action('admin_print_footer_scripts', 'load_furigana_scripts');
 
 // Include Ruby CSS
@@ -58,7 +60,7 @@ function furigana_css() {
 	wp_register_style('furigana_css', $ruby);
 	wp_enqueue_style('furigana_css');
 }
-add_action('after_setup_theme', 'furigana_css');
+add_action('wp_enqueue_script', 'furigana_css');
 
 // Adds a filter to append the default stylesheet to the tinymce editor.
 if ( ! function_exists('tdav_css') ) {

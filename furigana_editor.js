@@ -2,7 +2,7 @@
 	tinymce.create('tinymce.plugins.Furigana', {
 		init : function(ed, url) {
 			ed.addButton('furigana', {
-				title : 'Furigana',
+				title : 'Add Furigana',
 				image : url+'/assets/furigana.png',
 				onclick : function(v) {
 					var sel_text = 0;
@@ -14,8 +14,8 @@
 					} else {
 					    content = editor.getContent();
 					}
-				
-					var furigana = prompt("Insert Furigana", furigana);
+					
+					var furigana = prompt("Insert Furigana", "");
 					
 					if(furigana){
 						ed.execCommand('mceInsertContent', false, '<ruby><rb>'+content+'</rb><rt>'+furigana+'</rt></ruby>');
@@ -36,7 +36,7 @@
 				}
 			});
 			ed.addButton('furiganacleaner', {
-				title : 'Furigana Cleaner',
+				title : 'Furigana Cleaner (removes empty ruby tags)',
 				image : url+'/assets/furiganacleaner.png',
 				onclick : function(v) {
 					var sel_text = 0;
@@ -49,7 +49,6 @@
 					    content = editor.getContent();
 					}
 				
-					//var furigana = prompt("Clean up furigana", furigana);
 					var endContent = $(editor.getContent());
 					$('ruby', endContent).each(function(){
 						var plainText = $('rb', $(this)).text();
@@ -62,7 +61,6 @@
 							ed.setContent(newHtml);
 						}
 					});
-					console.log("clean up");
 				}
 			});
 		},
@@ -71,8 +69,7 @@
 		},
 		getInfo : function() {
 			return {
-				longname : "WP Furigana"
-				
+				longname : "WP-Furigana"
 			};
 		}
 	});
