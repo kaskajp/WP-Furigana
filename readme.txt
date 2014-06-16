@@ -2,8 +2,8 @@
 Contributors: KASKA
 Tags: japanese, language, tinymce
 Requires at least: 3.3.1
-Tested up to: 3.9
-Stable tag: 1.2
+Tested up to: 3.9.1
+Stable tag: 1.2.1
 
 WP-Furigana enables you to add Furigana (a Japanese reading aid) using the visual editor. No knowledge of the ruby HTML tag is needed.
 
@@ -37,6 +37,9 @@ The rp tag is not supported in this version of WP-Furigana.
 Internet Explorer supports furigana and reading it works just fine, however, the plugin itself has not, and will not be tested in IE in a foreseeable future.
 
 == Changelog ==
+
+= 1.2.1 =
+* Testing and fixing plugin for WordPress 3.9.1
 
 = 1.2 =
 * Testing and fixing plugin for WordPress 3.9
