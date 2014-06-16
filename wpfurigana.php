@@ -1,10 +1,10 @@
 <?php
 /**
  * Plugin Name: WP-Furigana
- * Plugin URI: http://kaska.jp/
+ * Plugin URI: http://kaska.jp/#/wp-furigana
  * Description: Easily add furigana to text in the WordPress editor
  * Author: KASKA
- * Version: 1.2
+ * Version: 1.2.1
  * Author URI: http://kaska.jp/
  */
 
