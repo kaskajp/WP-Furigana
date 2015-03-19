@@ -11,15 +11,7 @@
 * Testing plugin on WordPress 3.8
 
 ### 1.0
-* Added the cleanup button.
+* Added cleanup button. Use this to remove empty ruby tags left behind when editing/removing furigana in the visual editor.
 
 ### 0.5
 * First version of WP-Furigana.
-
-## Upgrade Notice
-
-### 1.0
-Added the cleanup button. Use this to remove empty ruby tags left behind when editing/removing furigana in the visual editor.
-
-### 0.5
-First version of WP-Furigana.
