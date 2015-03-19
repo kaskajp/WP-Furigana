@@ -3,8 +3,8 @@
 WP-Furigana enables you to add Furigana (a Japanese reading aid) using the visual editor. No knowledge of the ruby HTML tag is needed.
 
 Requires: WordPress 3.3.1 or newer
-Tested up to: 3.9.1
-Stable tag: 1.2.1
+Tested up to: 4.1.1
+Stable tag: 1.2.2
 
 ## Installation and usage:
 
@@ -36,20 +36,16 @@ Ruby is supported and displays correctly in Internet Explorer, however, the Word
 #### Why am I seeing empty ruby tags in the HTML editor?
 If you remove furigana in the visual editor, parts of the ruby tag will remain. It's very important not to leave empty ruby tags so the WordPress editor is cleaned up each time you add a new furigana. If you don't add any furigana after removing them in the visual editor, use the cleanup button introduced in the latest version of WP-Furigana.
 
-### The furigana is too close to my text!
-
+#### The furigana is too close to my text!
 This plugin uses a custom CSS for Firefox, therefore your text's line-height is very important. Never give your text's line-height a value lower than the default (1).
 
-### Why is the furigana not working in the visual editor in Firefox?
-
+#### Why is the furigana not working in the visual editor in Firefox?
 Firefox is only supported at the front-end at the moment. The furigana has been colored blue though so it's possible to edit it in Firefox.
 
-### Why can't I use the rp tag?
-
+#### Why can't I use the rp tag?
 The rp tag is not supported in this version of WP-Furigana.
 
-### Why is the plugin not working correctly in Internet Explorer?
-
+#### Why is the plugin not working correctly in Internet Explorer?
 Internet Explorer supports furigana and reading it works just fine, however, the plugin itself has not, and will not be tested in IE in a foreseeable future.
 
 ## Credits:

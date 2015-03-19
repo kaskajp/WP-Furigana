@@ -4,7 +4,7 @@
  * Plugin URI: http://kaska.jp/#/wp-furigana
  * Description: WP-Furigana enables you to add Furigana (a Japanese reading aid) using the visual editor. No knowledge of the ruby HTML tag is needed.
  * Author: Jonas Raneryd
- * Version: 1.2.1
+ * Version: 1.2.2
  * Author URI: http://kaska.jp/
  */
 
