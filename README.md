@@ -3,8 +3,8 @@
 WP-Furigana enables you to add Furigana (a Japanese reading aid) using the visual editor. No knowledge of the ruby HTML tag is needed.
 
 Requires: WordPress 3.3.1 or newer
-Tested up to: 4.1.1
-Stable tag: 1.2.2
+Tested up to: 4.4.2
+Stable tag: 1.2.3
 
 ## Installation and usage:
 

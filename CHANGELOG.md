@@ -1,5 +1,8 @@
 # Changelog
 
+### 1.2.3
+* Testing and fixing plugin for WordPress 4.4.2
+
 ### 1.2.2
 * Testing and fixing plugin for WordPress 4.1.1
 
